@@ -6,7 +6,7 @@
 
 .PantallaRes{
     top: 0;
-    width: 410px;
+    width: 100%px;
     height: 20%;
     color: #FCF1F5;
     font-size: 4em;
@@ -21,9 +21,9 @@
 .Principal button{
     background: #949FB3;
     color: #85162A;
-    height: 88px;
+    height: 13%;
     float: left;
-    width: 102px;
+    width: 25%;
     border: 1px solid black;
     border-bottom: none;
     font-size: 2em;
@@ -48,7 +48,7 @@
 }
 
 #igual{
-    width: 306px;
+    width: 75%;
     background: #32CCBC;
 }
 #suma{
