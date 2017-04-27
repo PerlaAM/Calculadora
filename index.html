@@ -1,0 +1,91 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="Estilo.css">
+    <meta name="viewport" content="width=device-width">
+    <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+    
+    
+</head>
+    <body>
+        <div class="PantallaRes" id="Resi">
+            
+        
+        </div>
+    
+    
+        <div class="Principal">
+            <div class="Superior">
+            <button value="+-">+-</button>
+            <button value="(">(</button>
+            <button value=")">)</button>
+            <button onclick="navegar('Texto.html')">☁</button>   
+            </div>
+                    
+            
+            <div class="numeros">
+            <button value="7">7</button>
+            <button value="8">8</button>
+            <button value="9">9</button>
+                <button id="entre" value="/">÷</button>
+            <button value="4">4</button>
+            <button value="5">5</button>
+            <button value="6">6</button>
+                <button id="por" value="*">x</button>
+            <button value="1">1</button>
+            <button value="2">2</button>
+            <button value="3">3</button>
+                <button id="menos" value="-">-</button>
+            <button value="0">0</button>
+            <button value=".">.</button>
+            <button value="%">%</button>
+            <button value="+" id="suma">+</button>
+            <button id="C" onclick="borrar()">C</button>
+            <button id="igual" onclick="igual()">=</button>
+            
+            </div>
+        </div>
+    
+        <script>
+        var Res = document.getElementById("Resi");
+        window.addEventListener('load', function() {
+                                
+        
+            
+        var botones = document.getElementsByTagName('button');
+            
+            for(var i=0;i<botones.length;i++){
+                
+                botones[i].addEventListener('click', function(){
+                    Res.innerHTML+=this.value;
+                                            })
+            }
+            
+            
+            })
+            
+            function borrar(){
+                Res.innerHTML=" ";
+            }
+                            
+            function igual(){
+                Res.innerHTML=eval(Res.innerHTML);
+            }
+            
+            function navegar(liga){
+                if(Res.innerHTML==007)
+                window.location.assign('Texto.html');
+            }
+            
+            
+           
+            
+        </script>
+        
+        
+        
+        
+        
+    </body>
+
+</html>

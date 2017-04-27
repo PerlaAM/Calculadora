@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Arvo', serif;
+}
+
+.PantallaRes{
+    top: 0;
+    width: 410px;
+    height: 20%;
+    color: #FCF1F5;
+    font-size: 4em;
+    display: flex;
+    justify-content: flex-end;
+    box-sizing: border-box;
+    padding: 20px;
+    background: #323232;
+}
+
+
+.Principal button{
+    background: #949FB3;
+    color: #85162A;
+    height: 88px;
+    float: left;
+    width: 102px;
+    border: 1px solid black;
+    border-bottom: none;
+    font-size: 2em;
+}
+
+.numeros button{
+    background: #DCD9D3;
+    color: #4E5E63;
+    font-size: 2em;
+}
+
+#entre{
+    background: #38AB90;
+}
+
+#por{
+     background: #38AB90;
+}
+
+#menos{
+     background: #38AB90;
+}
+
+#igual{
+    width: 306px;
+    background: #32CCBC;
+}
+#suma{
+     background: #38AB90;
+}
+
+#C{
+    margin-top: 0px;
+    background: #58FF8F;
+}
+
+#Guardar{
+
+    width: calc(100% - 300px);
+    margin-left: 50px;
+    border-radius: 15px;
+    border-bottom: none;
+    border: none;
+    height: 57px;
+    margin-top: 18px;
+    background: #885077;
+    font-family: 'Century Gothic';
+    font-size: 1em;
+}
+
+#Salir{
+    width: calc(100% - 300px);
+    margin-left: 80px;
+    background: #885077;
+    border-radius: 15px;
+    border-bottom: none;
+    border: none;
+    height: 57px;
+    margin-top: 18px;
+    font-family: 'Century Gothic';
+    font-size: 1em;
+}
+.escribe{
+    background: #6D9A97;
+    width: 100%;
+    height: 100%;
+}
+
+.escribe textarea{
+    resize: none;
+    width: calc(100% - 100px);
+    margin: 50px;
+    margin-bottom: 0px;
+    height: 200px;
+    border-radius: 15px;
+    font-size: 4em;
+    
+}
+

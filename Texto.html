@@ -1,0 +1,51 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="Estilo.css">
+    <meta name="viewport" content="width=device-width">
+</head>
+
+<body>
+    <div class="escribe" id="acc">
+        <textarea id="tex"></textarea>
+        <button onclick="Guardar()"  id="Guardar">Guardar</button>
+        <button id="Salir">Regresar</button>
+    </div>    
+    
+    <div>
+    
+    </div>
+    
+    <script>
+        
+            var acc = document.getElementById('acc');
+        
+            var textarea = document.createElement("textarea");
+            var contador = 0;
+            
+        function Guardar(){
+
+            var texto = document.getElementById('tex');
+
+          
+            localStorage.setItem('texto',texto.value);
+            
+            var Guar = textarea.value = texto.value;
+            var nota = Guar;
+            localStorage.setItem('nota',nota);
+            
+            contador++;            
+        }
+        
+            window.addEventListener('load', function() {
+
+            textarea.setAttribute('disabled',"disabled");     
+            textarea.classList.add('.notas');
+            acc.appendChild(textarea);
+            textarea.value+=localStorage.getItem('nota');
+            })
+
+    </script>
+    
+    </body>
+</html>
